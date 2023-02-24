@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/gloock_regular"
+        android:text="@string/airjordan"
+        android:textSize="23dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ladies"
+        android:fontFamily="@font/edutas"
+        android:textSize="17dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/search"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="15dp"
+        android:hint="Search"
+        android:padding="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="8sp">
+    </EditText>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="22dp"
+        android:layout_marginLeft="355dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_cart"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:layout_alignTop="@+id/judul"
+        android:layout_marginTop="50dp"
+        android:id="@+id/grid"
+        tools:listitem="@layout/item_grid_sepatu"
+        />
+
+</RelativeLayout>

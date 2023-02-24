@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UKLProject</string>
+    <string name="nama_barang">Nama Sepatu</string>
+    <string name="harga">harga</string>
+    <string name="airjordan">Air Jordan</string>
+    <string name="ladies">Ladies</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+</resources>
