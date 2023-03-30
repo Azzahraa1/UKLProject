@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val pass = findViewById<EditText>(R.id.password)
         val email = findViewById<EditText>(R.id.email)
         val btnLoginActivity = findViewById<Button>(R.id.btnLogin)
+        val btnRegisterFragment = findViewById<Button>(R.id.btnLogin2)
 
         btnLoginActivity.setOnClickListener {
             val strEmail = email.text.toString()
@@ -26,6 +27,13 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnRegisterFragment.setOnClickListener {
+            val intent = Intent(this,RegisterFragment::class.java)
+            startActivity(intent)
+        }
+
 
     }
+
+
 }

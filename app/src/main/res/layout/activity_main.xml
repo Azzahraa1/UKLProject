@@ -79,5 +79,17 @@
         android:layout_marginLeft="130dp"
         android:layout_marginTop="450dp"/>
 
+    <Button
+        style="@style/button"
+        android:id="@+id/btnLogin2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/registrasi"
+        android:textColor="@color/black"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="510dp"/>
+
+
+
 
 </RelativeLayout>
