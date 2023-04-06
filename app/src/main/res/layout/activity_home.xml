@@ -16,30 +16,12 @@
         app:menu="@menu/bottom"
         android:background="@color/white"/>
 
-    <TextView
+
+    <ImageView
         android:id="@+id/judul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
-        android:fontFamily="@font/gloock_regular"
-        android:text="@string/airjordan"
-        android:textSize="23dp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/lds"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ladies"
-        android:fontFamily="@font/edutas"
-        android:textSize="17dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="70dp"/>
-
+        android:layout_width="139dp"
+        android:layout_height="75dp"
+        android:src="@drawable/airjordanputih" />
 
     <EditText
         android:id="@+id/password"
@@ -78,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="730dp"
         android:layout_alignTop="@+id/judul"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:id="@+id/grid"
         tools:listitem="@layout/item_grid_sepatu"
         />

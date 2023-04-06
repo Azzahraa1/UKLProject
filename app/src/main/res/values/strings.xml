@@ -15,4 +15,5 @@
     <string name="Nama">Nama</string>
     <string name="Email">Email</string>
     <string name="TglLahir">Tgl Lahir</string>
+    <string name="name">Nama</string>
 </resources>
